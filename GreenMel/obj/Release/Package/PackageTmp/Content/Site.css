@@ -1,31 +1,109 @@
-﻿/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 50px;
+﻿body {
+    padding-top: 55px;
     padding-bottom: 20px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
+/* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
 
+div.bkimg{
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .jumbotron {
-        margin-top: 20px;
-    }
+    background-image:url("../Images/pexels-photo-11352.jpeg");
+    background-repeat:no-repeat;
+    width:auto;
+    height: 500px;
+    background-size:100%;
+    align-content:center;
+    align-items:center
+}
 
-    .body-content {
-        padding: 0;
-    }
+/*search */
+
+       input[type=text] {
+           width: 200px;
+           height: 80PX;
+           font-size: 28px;
+           -webkit-transition: width 0.4s ease-in-out;
+           transition: width 0.4s ease-in-out;
+           margin-left:380px;
+           border-radius: 8px;
+       }
+
+
+       input[type=text]:focus {
+           width: 30%;
+       }
+       .button {
+           border-radius: 8px;
+           background-color: #f4c95d;
+           border: none;
+           color: #FFFFFF;
+           text-align: center;
+           font-size: 28px;
+           padding: 20px;
+           width: 200px;
+           transition: all 0.5s;
+           cursor: pointer;
+           margin: 5px;
+       }
+
+       .button span {
+           cursor: pointer;
+           display: inline-block;
+           position: relative;
+           transition: 0.5s;
+       }
+
+       .button span:after {
+           content: '\00bb';
+           position: absolute;
+           opacity: 0;
+           top: 0;
+           right: -20px;
+           transition: 0.5s;
+       }
+
+       .button:hover span {
+           padding-right: 25px;
+       }
+
+       .button:hover span:after {
+           opacity: 1;
+           right: 0;
+       }
+
+.logo {
+
+    width:350px;
+    margin-top:50px;
+    margin-left:400px;
+
+}
+
+.about{
+
+    width:900px;
+
+}
+
+div.maplink {
+    
+    text-align:center
 }

@@ -43,6 +43,6 @@ C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\bin\System.Web.Optimization.xm
 C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\bin\Antlr3.Runtime.pdb
 C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\bin\Newtonsoft.Json.xml
 C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\obj\Debug\GreenMel.csprojResolveAssemblyReference.cache
 C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\obj\Debug\GreenMel.dll
 C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\obj\Debug\GreenMel.pdb
+C:\Users\DUONG\Documents\GitHub\GreenMel\GreenMel\bin\AjaxControlToolkit.dll

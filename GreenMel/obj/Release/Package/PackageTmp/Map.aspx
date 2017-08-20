@@ -23,14 +23,11 @@
             
             var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 11,
-                center: { lat: -37.814, lng: 144.96332 },
-                mapTypeControl: false,
-                fullscreenControl: false,
-                streetViewControl: false,
+                center: { lat: -37.814, lng: 144.96332 }
             });
 
             var ctaLayer = new google.maps.KmlLayer({
-                url: 'https://od.lk/d/Nl85NDE3NjYwNl8/Melbourne%20Postcode%20Map%20%286%29.kml',
+                url: 'https://od.lk/d/Nl85NDIxNTM3MV8/4suburb.kml',
                 map: map
             });
         }
@@ -41,7 +38,7 @@
 <style>
     
     input[type=text] {
-    width: 130px;
+    width: 500px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }

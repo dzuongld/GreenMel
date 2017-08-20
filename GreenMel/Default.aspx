@@ -1,42 +1,48 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GreenMel._Default" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+    <!--<div class="jumbotron">
+       
+       
+    </div> -->
+        
+    <div class="bkimg" runat="server">
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
 
+      <img src="Images/11120341_173712604000_2.gif" class="logo"/>
+        <br />
+        <asp:TextBox runat="server" type="text" name="search" placeholder="Enter suburb name" Width="500"></asp:TextBox>
+        <asp:LinkButton ID="gobutton" cssclass="button" runat="server" Text="GO" PostBackUrl="~/Map.aspx">GO</asp:LinkButton>
+        <br />
+        <div class="maplink">
+        <asp:Hyperlink runat="server" NavigateUrl="~/Map.aspx" 
+            style="color:white;font-size:x-large;background-color:blue">
+            <span class="maplinktext">Or click here to view all suburbs</span> </asp:Hyperlink>
+         </div>
+
+    </div>
+        
+<div class="row" runat="server">
+    <div class="col-md-4">
+        <h2>Get to know your suburb</h2>
+        <p>
+            Ever wondered if your suburb is healthy or safe enough? Click now to learn more!
+
+        </p>
+        
+    </div>
+    <div class="col-md-4">
+        <h2>Health Matrix</h2>
+        <p>Rate suburbs based on: number of hospitals, clinics, parks, gym facilities, crime rates, and more! </p>
+        
+    </div>
+    <div class="col-md-4">
+        <h2>Suburbs Comparison</h2>
+        <p>Compare one suburb against another in terms of health and safety ratings.  </p>
+        
+    </div>
+</div>
+        
 </asp:Content>
